@@ -1,0 +1,39 @@
+/* Apply styles to the container */
+.container {
+    display: flex;
+    justify-content: space-between; /* Place the two sections horizontally at each end */
+    background-color: white; /* Background color */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  /* Apply styles to the elements with class "nav-section" */
+  .nav-section {
+    display: flex;
+    gap: 20px; /* Add a little space in between */
+    color: white; /* Change text color to white */
+    right: 50px;
+  }
+  
+  /* Apply styles to the elements with class "country-language-section" */
+  .country-language-section {
+    display: flex;
+    gap: 10px; /* Add a little space in between */
+    color: white; /* Change text color to white */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    /* For smaller screens, stack elements vertically */
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-section, .country-language-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  }
+  
